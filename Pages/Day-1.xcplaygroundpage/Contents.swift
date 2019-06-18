@@ -17,3 +17,7 @@ over multiple \
 lines
 """
 
+//Doubles and booleans
+var pi = 3.141
+var isAwesome = true
+
