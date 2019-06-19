@@ -18,3 +18,9 @@ var name = (first: "Taylor", last: "Swift")
 name.0
 name.first
 name.last
+
+//Difference between Tuples, Sets and Arrays
+let address = (house:555, street: "Taylor Swift Avenue", city: "Nashvile")
+let set = Set(["aardvark", "astronaut", "azalea"])
+let pythons = ["Eric", "Graham", "John", "Michael", "Terry", "Terry"]
+
