@@ -30,3 +30,10 @@ let heights = [
     "Ed Sheeran": 1.73]
 heights["Taylor Swift"]
 
+//Dictionaries Default values
+let favoriteCream = [
+"Paul": "Chocolate",
+"Sophie": "Vanilla"]
+favoriteCream["Paul"]
+favoriteCream["Charlotte"]
+favoriteCream["Charlotte", default: "Unknown"]
