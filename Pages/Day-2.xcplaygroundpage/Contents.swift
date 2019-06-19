@@ -43,9 +43,15 @@ var teams = [String: String]()
 teams["Paul"] = "Red"
 var result = [Int]()
 var words = Set<String>()
-var numbers = Set<Int>
+var numbers = Set<Int>()
 var scores = Dictionary<String, Int>()
-var result = Array<Int>()
+var results = Array<Int>()
 
 
+//Enumerations
+enum Result {
+    case failure
+    case success
+}
 
+let result4 = Result.failure
