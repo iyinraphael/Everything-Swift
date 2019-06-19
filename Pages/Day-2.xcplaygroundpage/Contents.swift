@@ -24,3 +24,9 @@ let address = (house:555, street: "Taylor Swift Avenue", city: "Nashvile")
 let set = Set(["aardvark", "astronaut", "azalea"])
 let pythons = ["Eric", "Graham", "John", "Michael", "Terry", "Terry"]
 
+//Dictionaries
+let heights = [
+    "Taylor Swift": 1.78,
+    "Ed Sheeran": 1.73]
+heights["Taylor Swift"]
+
