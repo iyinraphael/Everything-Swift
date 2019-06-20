@@ -28,3 +28,40 @@ while counter < 64 {
     print("\(counter) is a power of 2.")
     counter *= 2
 }
+
+
+//Repeat Loops
+repeat {
+    print(number)
+    number += 1
+} while number <= 20
+print("Ready or nor, here I come")
+
+repeat {
+    print("This is false")
+} while false
+
+var bagels = 5
+repeat {
+    print("Someone ate a bagel")
+    bagels -= 1
+} while bagels > 0
+
+var encores = 0
+repeat {
+    print("Let's play that piece again.")
+    encores += 1
+} while encores < 3
+
+
+//Exiting Loops
+var countDown = 10
+while countDown >= 0 {
+    print(countDown)
+    if countDown == 4 {
+        print("I'm bored. Let's go now!")
+        break
+    }
+    countDown -= 1
+}
+print("Blast off!")
