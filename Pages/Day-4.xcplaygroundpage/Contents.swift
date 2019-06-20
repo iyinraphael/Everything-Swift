@@ -87,3 +87,15 @@ for i in 1...10 {
     }
     print(i)
 }
+
+
+//Infinite Loops
+while true {
+    print(" ")
+    counter += 1
+    
+    if counter == 273 {
+        break
+    }
+}
+
