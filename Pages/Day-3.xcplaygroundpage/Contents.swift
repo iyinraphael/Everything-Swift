@@ -72,7 +72,6 @@ if age1 > 18 || age2 > 18 {
 print(firstCard == secondCard ? "Cards are the same" : "Cards are different")
 
 //Switch Statements
-
 let weather = "sunny"
 
 switch weather {
@@ -84,4 +83,16 @@ case "sunny":
     print("Wear sunscreen")
 default:
     print("Enjoy your day!")
+}
+
+//Range Operators
+let newScore = 85
+
+switch score {
+case 0..<50:
+    print("You failed badly")
+case 50..<85:
+    print("You did Ok.")
+default:
+    print("You did great!")
 }
