@@ -24,3 +24,9 @@ let firHalf = ["john", "Paul"]
 let secondHalf = ["George", "Ringo"]
 let beatles = firHalf + secondHalf
 
+
+//Compound Assignment Operators
+var score = 95
+score -= 5
+var quote = "The rain is Spain falls mainly on the "
+quote += "Spanaid"
