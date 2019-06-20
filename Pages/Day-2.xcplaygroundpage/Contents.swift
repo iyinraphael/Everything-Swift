@@ -71,4 +71,10 @@ enum Planet: Int {
     case earth
     case mars
 }
-let earth = Planet(rawValue: 3)
+
+var dict = [Character: Int]()
+for key in "AAABBC" {
+    dict[key, default: 0]  += 1
+}
+
+print(dict.keys.min {dict[$0]! < dict[$1]!} ?? "")
