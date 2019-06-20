@@ -70,3 +70,18 @@ if age1 > 18 || age2 > 18 {
 
 //Ternary Operator
 print(firstCard == secondCard ? "Cards are the same" : "Cards are different")
+
+//Switch Statements
+
+let weather = "sunny"
+
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+case "snow":
+    print("wrap up warm")
+case "sunny":
+    print("Wear sunscreen")
+default:
+    print("Enjoy your day!")
+}
