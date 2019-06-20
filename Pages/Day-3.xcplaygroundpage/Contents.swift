@@ -69,3 +69,4 @@ if age1 > 18 || age2 > 18 {
 }
 
 //Ternary Operator
+print(firstCard == secondCard ? "Cards are the same" : "Cards are different")
