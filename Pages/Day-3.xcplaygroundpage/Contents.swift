@@ -44,3 +44,15 @@ firstScore1 >= secondScore2
 
 "Taylor" <= "Swift"
 
+//Conditons
+let firstCard = 11
+let secondCard = 10
+
+if firstCard + secondCard == 2 {
+    print("Aces - Lucky")
+} else if firstCard + secondCard == 21{
+    print("BlackJack!")
+} else {
+    print("Regular cards")
+}
+
