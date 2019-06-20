@@ -65,3 +65,25 @@ while countDown >= 0 {
     countDown -= 1
 }
 print("Blast off!")
+
+//Exiting Multiple Loops
+outerLoop: for i in 1...10 {
+    for j in 1...10 {
+        let product = i * j
+        print("\(i) * \(j) is \(product)")
+        
+        if product == 50 {
+            print("It's a bullseye!")
+            break outerLoop
+        }
+    }
+}
+
+
+//Skipping Items
+for i in 1...10 {
+    if i % 2 == 1 {
+        continue
+    }
+    print(i)
+}
