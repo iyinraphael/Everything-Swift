@@ -35,3 +35,21 @@ func sayHello(to name: String){
     print("Hello, \(name)!")
 }
 sayHello(to: "Taylor")
+
+
+//Omitting Parameter Labels
+func greet(_ person: String){
+    print("Hello, \(person)")
+}
+greet("Taylor")
+
+//Default Parameters
+func pleaseGreet(_ person: String, nicely: Bool = true){
+    if nicely == true {
+        print("Hello, \(person)!")
+    } else {
+        print("Oh no, it's \(person) again...")
+    }
+}
+pleaseGreet("Taylor")
+pleaseGreet("Talor", nicely: false)
