@@ -43,6 +43,8 @@ func greet(_ person: String){
 }
 greet("Taylor")
 
+
+
 //Default Parameters
 func pleaseGreet(_ person: String, nicely: Bool = true){
     if nicely == true {
@@ -53,3 +55,41 @@ func pleaseGreet(_ person: String, nicely: Bool = true){
 }
 pleaseGreet("Taylor")
 pleaseGreet("Talor", nicely: false)
+
+
+//Variadic Functions
+func varadicSquare(numbers: Int...) {
+    for number in numbers {
+        print("\(number) squared is \(number * number)")
+    }
+}
+varadicSquare(numbers: 1, 2, 3, 4, 5, 6)
+
+
+
+//Writing Throwing Functions
+enum PasswordError: Error {
+    case obvious
+}
+
+func checkPassword(_ password: String) throws -> Bool {
+    if password == "password" {
+        throw PasswordError.obvious
+    }
+    return true
+}
+
+do {
+    try checkPassword("password")
+    print("That password is good!")
+}catch {
+    print("You can't use that password")
+}
+
+
+//Inout Parameters
+func doubleInPlace(number: inout Int){
+    number *= 2
+}
+var myNum = 10
+doubleInPlace(number: &myNum)
