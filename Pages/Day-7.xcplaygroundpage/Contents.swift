@@ -42,7 +42,7 @@ func travelSpeed(action: (String, Int) -> String){
 }
 
 travelSpeed { "I'm going to \($0) at \($1) miles per hour."
-}
+}//trailing closures 
 
 
 //Returning Closures
@@ -55,3 +55,17 @@ func travelClose() -> (String) -> Void {
 
 let resultCL = travelClose()
 resultCL("London")
+
+
+//Capturing Values
+
+func travelCounter() -> (String) -> Void {
+    var counter = 1
+    return {
+        print("\(counter) I'm going to \($0)")
+        counter += 1
+    }
+}
+let resultCo = travelCounter()
+resultCo("Lagos")
+resultCo("Lagos")
