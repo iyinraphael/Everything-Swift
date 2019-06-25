@@ -42,7 +42,7 @@ func travelSpeed(action: (String, Int) -> String){
 }
 
 travelSpeed { "I'm going to \($0) at \($1) miles per hour."
-}//trailing closures 
+}//trailing closures c
 
 
 //Returning Closures
