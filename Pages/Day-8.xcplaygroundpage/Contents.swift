@@ -40,3 +40,35 @@ var progress = Progress(task: "Loading data", amount: 0)
 progress.amount = 30
 progress.amount = 60
 progress.amount = 90
+
+
+
+//Methods
+
+struct City {
+    
+    var population: Int
+    
+    func collectTaxes() -> Int {
+        return population * 1000
+    }
+}
+
+let london = City(population: 9_000_000)
+london.collectTaxes()
+
+
+//Mutation Methods
+
+struct Person {
+    
+    var name: String
+    
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+    }
+}
+
+var person = Person(name: "Eddy")
+person.makeAnonymous()
+
