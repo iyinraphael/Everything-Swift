@@ -48,5 +48,24 @@ struct Student {
         Student.classSize += 1
     }
 }
+
 let taylor = Student(name: "taylor")
 print(Student.classSize)
+
+
+//Access Control
+
+struct Person3 {
+    private var id: String
+    
+    init(id: String) {
+        self.id = id
+    }
+    
+    //Only methods in side Person3 will be able to read property id
+    func identify() -> String {
+        return "My social security number is \(id)"
+    }
+}
+
+
