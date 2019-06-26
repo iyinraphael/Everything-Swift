@@ -24,7 +24,7 @@ var isAwesome = true
 
 //String Interpolation
 var score = 85
-var str1 = "Your scorre was \(score)"
+var str2 = "Your scorre was \(score)"
 var results = "The test results are here: \(str1)"
 
 
