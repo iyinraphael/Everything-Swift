@@ -4,10 +4,16 @@ import Foundation
 
 protocol Identifiable {
     var id: String {get set}
+    func identify()
 }
 
 struct User: Identifiable {
+    func identify() {
+          print("My ID is \(id)")
+    }
+    
     var id: String
+    
     
     func displayID(thing: Identifiable) {
         print("My ID is \(thing.id)")
@@ -69,3 +75,16 @@ extension Collection {
 
 pythons.summarize()
 beatles.summarize()
+
+
+
+//Protocol Oriented Programming
+
+extension Identifiable {
+    func identify()  {
+        print("My ID is \(id).")
+    }
+}
+
+let twostraws = User(id: "twostraws")
+twostraws.identify()
