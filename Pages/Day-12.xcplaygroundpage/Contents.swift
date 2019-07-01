@@ -34,3 +34,9 @@ func greet(_ name: String?) {
 let str = "5"
 let num = Int(str)!
 
+
+
+//Implicitly unwrapped optionals
+
+let newAge: Int! = nil
+ 
