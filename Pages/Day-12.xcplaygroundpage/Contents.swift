@@ -51,3 +51,9 @@ func username(for id: Int) -> String? {
 }
 
 let user = username(for: 15) ?? "Anonymous"
+
+
+//Optional Chaining
+
+let names = ["John", "Paul", "George", "Ringo"]
+let beatle = names.first?.uppercased()
