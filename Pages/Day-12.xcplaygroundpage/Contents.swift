@@ -15,3 +15,22 @@ if let unwrapped = name {
 } else {
     print("Missing name.")
 }
+
+
+//Unwrapping with Guard
+
+func greet(_ name: String?) {
+    guard let unwrapped = name else {
+        print("You didn't provide a name!")
+        return
+    }
+    print("Hello, \(unwrapped)!")
+}
+
+
+
+//Force Unwraping
+
+let str = "5"
+let num = Int(str)!
+
