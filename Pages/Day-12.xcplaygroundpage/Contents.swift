@@ -81,3 +81,38 @@ if let result = try? checkPassword("password"){
 
 try! checkPassword("sekrit")
 print("OK!")
+
+//Failable Initializers
+
+struct Person {
+    var id: String
+    
+    init?(id: String) {
+        if id.count == 11 {
+            self.id = id
+        } else {
+            return nil
+        }
+    }
+}
+
+let mama = Person(id: "Mama Somolu")
+
+
+//Type Casting
+class Animal {}
+class Fish: Animal {}
+
+class Dog: Animal {
+    func makeNoise() {
+        print("woof!")
+    }
+}
+
+let pets = [ Fish(), Dog(), Fish(), Dog()]
+
+for pet in pets {
+    if let doggy = pet as? Dog {
+        doggy.makeNoise()
+    }
+}
