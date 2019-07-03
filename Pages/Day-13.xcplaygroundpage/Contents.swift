@@ -37,4 +37,39 @@ var nothingInBrain: Bool
 nothingInBrain = true
 
 var missABeat: Bool
-missABeat = false 
+missABeat = false
+
+
+
+//Operators +, -, *, /, =, %, !
+var a = 10
+a = a + 1
+a = a - 1
+a = a * a
+
+var b = 10
+b += 10
+b -= 10
+
+var name1 = "Tim McGraw"
+var name2 = "Romeo"
+var both = name1 + " and " + name2
+
+
+
+//Comparison operators
+
+var aa = 1.1
+var bb = 2.2
+var c = aa + bb
+
+c > 3
+c >= 3
+c > 4
+c < 4
+
+name1 == "Tim McGraw"
+
+!stayOutTooLate
+name1 != "Tim McGraw"
+
