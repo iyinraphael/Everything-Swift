@@ -73,3 +73,11 @@ name1 == "Tim McGraw"
 !stayOutTooLate
 name1 != "Tim McGraw"
 
+
+
+//String Interpolation
+
+"Your name is \(name)"
+"Your name is \(name), your age is \(age), and your latitude is \(latitude)"
+"You are \(age) years old. In another \(age) years you will be \(age * 2)."
+
