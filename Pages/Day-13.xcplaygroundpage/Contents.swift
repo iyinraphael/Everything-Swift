@@ -97,3 +97,17 @@ type(of: songs)
 var songs2 = ["today was a Fairytale", "Welcome to New York", "Fifteen"]
 var both2 = songs + songs2
 both2 += ["Everything has Changed"]
+
+
+
+//Dictionary
+var person = ["Taylor", "Allison","Swift", "December", "taylorswift.com"]
+
+var personDict = ["First" : "Taylor",
+                  "middle" : "Alison",
+                  "last" : "Swift",
+                  "month" : "December",
+                  "website" : "taylorswift.com"]
+personDict["middle"]
+personDict["month"]
+
