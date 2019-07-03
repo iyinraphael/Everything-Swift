@@ -81,3 +81,19 @@ name1 != "Tim McGraw"
 "Your name is \(name), your age is \(age), and your latitude is \(latitude)"
 "You are \(age) years old. In another \(age) years you will be \(age * 2)."
 
+
+
+//Arrays
+var evenNumbers = [2, 4, 6, 8]
+var songs: [Any] = ["Shake it off", "You Belong with Me", "Back to December", 3]
+
+songs[0]
+songs[1]
+songs[2]
+
+type(of: songs)
+
+
+var songs2 = ["today was a Fairytale", "Welcome to New York", "Fifteen"]
+var both2 = songs + songs2
+both2 += ["Everything has Changed"]
