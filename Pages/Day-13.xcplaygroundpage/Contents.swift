@@ -133,3 +133,31 @@ if stayOutTooLate && nothingInBrain {
 if !stayOutTooLate && !nothingInBrain {
     action = "No cruise"
 }
+
+
+//Loop
+for i in 1...10 {
+    print("\(i) * 10 is \(i * 10)")
+}
+
+for song in songs {
+    print("My favorite song is \(song)")
+}
+
+
+var people = ["players", "haters", "heart-breakers", "fakers"]
+var actions = ["play", "hate", "break", "fake"]
+
+for i in 0 ... 3 {
+    print("\(people[i]) gonna \(actions[i])")
+}
+
+for i in 0 ..< people.count {
+    var str = "\(people[i]) gonna"
+    
+    for _ in 1 ... 5 {
+        str += " \(actions[i])"
+    }
+    
+    print(str)
+}
