@@ -111,3 +111,25 @@ var personDict = ["First" : "Taylor",
 personDict["middle"]
 personDict["month"]
 
+
+
+//Conditional Statements
+
+var action: String
+var person2 = "hater"
+
+if person2 == "hater" {
+    action = "hate"
+} else if person2 == "player" {
+    action = "play"
+} else {
+    action = "cruise"
+}
+
+if stayOutTooLate && nothingInBrain {
+    action = "cruise"
+}
+
+if !stayOutTooLate && !nothingInBrain {
+    action = "No cruise"
+}
