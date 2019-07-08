@@ -163,3 +163,28 @@ getStatusHater(weather: WeatherType.cloud)
 
 
 
+//Struct
+
+struct Lizzy {
+    var clothes: String
+    var shoes: String
+    
+    func describe() {
+        print("I like wearing \(clothes) with \(shoes)")
+    }
+    
+}///comes with memberwise initializer
+
+let taylor = Lizzy(clothes: "Tan Top", shoes: "sneakers")
+let other = Lizzy(clothes: "short skirts", shoes: "high heels")
+
+print(taylor.clothes)
+print(other.shoes)
+
+var taylorCopy = taylor
+taylorCopy.shoes = "flip flops"
+
+print(taylor)
+print(taylorCopy)
+
+
