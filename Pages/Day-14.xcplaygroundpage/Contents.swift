@@ -62,3 +62,58 @@ func albumTaylor(name: String) -> Bool {
 }
 
 albumTaylor(name: "Jogo")
+
+
+
+//Optionals
+
+func getHaterStatus(weather: String) -> String? {
+    if weather == "sunny" {
+        return nil
+    } else {
+        return "Hate"
+    }
+}
+
+func takeHaterAction(status: String){
+    if status == "Hate" {
+         print("Hating")
+    }
+}
+
+if let haterStatus = getHaterStatus(weather: "rainy") {
+takeHaterAction(status: haterStatus)
+}
+
+//Force uwrapping optionals
+
+func yearAlbumReleased(name: String) -> Int? {
+    switch name {
+    case "Taylor Swift":
+        return 2006
+    case "Fealess":
+        return 2008
+    case "Speak Now":
+        return 2010
+    case "Red":
+        return 2012
+    case "1989":
+        return 2014
+    default:
+        return nil
+        }
+}
+
+var year = yearAlbumReleased(name: "Red")
+
+if year == nil {
+    print("There was an error")
+} else {
+    print("It was realeased in \(year!) ")
+}
+
+
+//Implicitly uwrapped optionals
+
+
+ 
