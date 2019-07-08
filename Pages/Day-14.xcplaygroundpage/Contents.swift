@@ -188,3 +188,60 @@ print(taylor)
 print(taylorCopy)
 
 
+
+//Classes
+
+class Izzy {
+    var clothes: String
+    var shoes: String
+    
+    init(clothes: String, shoes: String) {
+        self.clothes = clothes
+        self.shoes = shoes
+    }
+}
+
+class Singer {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func sing() {
+        print("do re mi fa so")
+    }
+}
+
+var singer = Singer(name: "Taylor", age: 25)
+singer.name
+singer.age
+singer.sing()
+
+
+//Class inheritance
+
+class CountrySinger: Singer {
+    override func sing() {
+        print("Trucks, guitars, and liquor")
+    }
+}
+
+var singer2 = CountrySinger(name: "Taylor", age: 25)
+singer2.sing()
+
+class HeavyMetalSinger: Singer {
+    var noiseLevel: Int
+    
+    init(name: String, age: Int, noiseLevel: Int) {
+        self.noiseLevel = noiseLevel
+        super.init(name: name, age: age)
+    }
+    
+    override func sing() {
+        print("Grrrrr raghr rargh rarrrrrgh!")
+    }
+}
+
