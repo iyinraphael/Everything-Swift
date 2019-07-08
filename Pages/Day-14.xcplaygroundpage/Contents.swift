@@ -66,6 +66,7 @@ albumTaylor(name: "Jogo")
 
 
 //Optionals
+//Tip: Swift’s optionals are actually implemented using enums with associated values. There are two cases: none, and some, with some having whatever value is inside the optional.
 
 func getHaterStatus(weather: String) -> String? {
     if weather == "sunny" {
@@ -135,6 +136,30 @@ print("The album is \(album)")
 
 let album12 = albumReleased(year: 2012) ?? "unknown"
 print("The album is \(album12)")
+
+
+
+//Enumeration or enum
+
+enum WeatherType {
+    case sun
+    case cloud
+    case rain
+    case wind(speed: Int) //Enums with additional values
+
+    case snow
+}
+
+func getStatusHater(weather: WeatherType) -> String? {
+    switch weather {
+    case .sun: return nil
+    case .wind(let speed) where speed < 10: return "meh"
+    case .cloud, .wind: return "dislike"
+    case .rain, .snow: return "hate"
+    }
+}
+
+getStatusHater(weather: WeatherType.cloud)
 
 
 
