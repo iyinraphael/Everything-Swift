@@ -20,4 +20,19 @@ func updateUI(msg: String) {
 
 var newTaylor = Ngozi(clothes: "T-shirts")
 newTaylor.clothes = "short skirts"
-  
+
+
+//Computer Property
+
+struct PersonAge {
+    var age : Int
+    
+    var ageInDogYears: Int {
+        get {
+            return age * 7
+        }
+    }
+}
+
+var fan = PersonAge(age: 25)
+print(fan.ageInDogYears)
