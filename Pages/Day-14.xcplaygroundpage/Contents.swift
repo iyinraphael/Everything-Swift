@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 
 //Review of functions
@@ -129,7 +129,7 @@ func albumReleased(year: Int) -> String? {
     }
 }
 let album = albumReleased(year: 2006)?.uppercased()
-print("The album is \(album)")
+print("The album is \(album!)")
 
 
 //The nil coalescing operator

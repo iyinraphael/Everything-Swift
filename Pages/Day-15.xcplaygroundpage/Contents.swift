@@ -1,5 +1,4 @@
-import Foundation
-
+import UIKit
 //Property Observer...willSet and didSet
 
 struct Ngozi {
@@ -121,3 +120,13 @@ for album in allAlbums {
 for album in allAlbums as! [StudioAlbum] {
     print(album.studio)
 }
+
+
+//Closure
+
+let vw = UIView()
+
+UIView.animate(withDuration: 0.5) {
+    vw.alpha = 0
+}
+
