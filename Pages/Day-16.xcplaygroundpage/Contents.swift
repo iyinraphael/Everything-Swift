@@ -34,3 +34,25 @@ let staff: [Employee] = [ Executive(), Manager()]
 for person in staff {
     person.doWork()
 }
+
+
+
+//Extensions
+
+var myInt = 0
+
+extension Int {
+    //mutating means that the inoput will be changed
+    mutating func plusOne() {
+        self + 1
+    }
+}
+
+myInt.plusOne()
+
+
+extension String {
+    mutating func trim() {
+        self = trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+}
