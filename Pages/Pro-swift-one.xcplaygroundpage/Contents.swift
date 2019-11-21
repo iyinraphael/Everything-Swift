@@ -107,4 +107,16 @@ for case let .some(datum) in data {
 
 /* Matching ranges */
 
+let age = 36
+
+switch age {
+case 0 ..< 18:
+    print("You have the energy and time, but not the money")
+case 18 ..< 70:
+    print("You have the energy and money, but not the time")
+default:
+    print("You have the time and money, but no the energy")
+}
+
+
 
